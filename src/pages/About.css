@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* About Banner */
+.about-banner {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-banner .overlay {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-banner h1 {
+  font-size: 3rem;
+  margin: 0;
+  animation: slideInDown 1.5s ease-in-out;
+}
+
+/* Mission Section */
+.mission-section {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  animation: fadeIn 1.9s ease-in-out forwards;
+  opacity: 0;
+}
+
+.mission-content {
+  max-width: 600px;
+  animation: slideInLeft 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.mission-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mission-content p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.mission-image {
+  max-width: 100%;
+  text-align: center;
+}
+
+.mission-image img {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Vision Section */
+.vision-section {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  animation: fadeIn 1.9s ease-in-out forwards;
+  opacity: 0;
+}
+
+.vision-content {
+  max-width: 600px;
+  animation: slideInLeft 1.5s ease-in-out forwards;
+  opacity: 0;
+  text-align: left;
+}
+
+.vision-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.vision-content p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Why Us Section */
+.why-us-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.why-us-section h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.why-us-section h3 span {
+  color: #2294e6;
+}
+
+.why-us-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.why-us-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  transform: translateY(20px);
+  animation: slideInUp 1.2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.why-us-card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.why-us-card:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.why-us-card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.why-us-card:nth-child(4) {
+  animation-delay: 1.1s;
+}
+
+.why-us-card span {
+  color: #226de6;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.why-us-card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mission-content,
+  .vision-content {
+    max-width: 90%;
+  }
+
+  .mission-content h2,
+  .vision-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: 1rem;
+  }
+
+  .why-us-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-content,
+  .vision-content {
+    max-width: 100%;
+  }
+
+  .mission-image,
+  .vision-image {
+    text-align: center;
+  }
+
+  .why-us-card {
+    width: 100%;
+  }
+
+  .mission-content h2,
+  .vision-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-banner h1 {
+    font-size: 2rem;
+  }
+
+  .mission-content h2,
+  .vision-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .mission-content p,
+  .vision-content p {
+    font-size: 0.8rem;
+  }
+
+  .why-us-card span {
+    font-size: 1.2rem;
+  }
+
+  .why-us-card p {
+    font-size: 0.85rem;
+  }
+}

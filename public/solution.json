@@ -1,0 +1,35 @@
+{
+    "object-detection": {
+      "title": "Object Detection and Classification",
+      "description": "Advanced AI algorithms for real-time object recognition.",
+      "features": ["Real-time detection", "High accuracy", "Customizable"],
+      "useCases": ["Retail monitoring", "Traffic analysis", "Healthcare"],
+      "image": "/images/object-detection.jpg",
+      "summary": "State-of-the-art object detection for diverse industries."
+    },
+    "security": {
+      "title": "Security and Surveillance",
+      "description": "Comprehensive security solutions for modern needs.",
+      "features": ["24/7 monitoring", "Facial recognition", "Cloud storage"],
+      "useCases": ["Public surveillance", "Building security"],
+      "image": "/images/security.jpg",
+      "summary": "Enhanced safety with cutting-edge security systems."
+    },
+    "workforce": {
+      "title": "Works Monitoring and Attendance",
+      "description": "Optimize productivity with AI-powered workforce solutions.",
+      "features": ["Automated attendance", "Safety compliance", "Productivity tracking"],
+      "useCases": ["Employee management", "Safety adherence"],
+      "image": "/images/workforce.jpg",
+      "summary": "Streamline workforce operations with innovative monitoring tools."
+    },
+    "vehicle": {
+      "title": "Vehicle Detection and Monitoring",
+      "description": "Smart solutions for traffic and parking management.",
+      "features": ["License plate recognition", "Real-time tracking"],
+      "useCases": ["Parking management", "Traffic monitoring"],
+      "image": "/images/vehicle.jpg",
+      "summary": "Improve traffic flow and security with intelligent vehicle monitoring."
+    }
+  }
+  

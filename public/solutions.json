@@ -1,0 +1,22 @@
+[
+    {
+    "id": 1,
+    "title": "Object Detection and Classification",
+    "details": "Details about Object Detection and Classification solution."
+    },
+    {
+    "id": 2,
+    "title": "Security and Surveillance",
+    "details": "Details about Security and Surveillance solution."
+    },
+    {
+    "id": 3,
+    "title": "Worker Monitoring and Attendance",
+    "details": "Details about Worker Monitoring and Attendance solution."
+    },
+    {
+    "id": 4,
+    "title": "Vehicle Monitoring",
+    "details": "Details about Vehicle Monitoring solution."
+    }
+]

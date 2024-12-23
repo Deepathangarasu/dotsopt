@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+body, h1, h2, h3, h4, h5, h6, p, a, button, div, span, input, textarea {
+  font-family: 'Noto Sans', sans-serif;
+  color: #141414;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #007BFF; }
+
+
+button {
+  font-family: 'Noto Sans', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,101 @@
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.product-banner {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.glass-overlay {
+  background: rgba(255, 255, 255, 0.2); /* Glass effect */
+  backdrop-filter: blur(10px); /* Background blur for glass effect */
+  border-radius: 12px;
+  padding: 15px 25px;
+  max-width: 600px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.glass-overlay h2 {
+  font-size: 2rem; /* Reduced size for better responsiveness */
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.glass-overlay p {
+  font-size: 1rem; /* Adjusted font size for better readability */
+  line-height: 1.4; /* Reduced line height for compact layout */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .product-banner {
+    height: 70vh; /* Reduced height for tablets */
+  }
+
+  .glass-overlay {
+    padding: 10px 20px;
+    max-width: 500px;
+  }
+
+  .glass-overlay h2 {
+    font-size: 1.8rem; /* Reduced font size for headings */
+  }
+
+  .glass-overlay p {
+    font-size: 0.9rem; /* Reduced paragraph font size */
+    line-height: 1.4;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .product-banner {
+    height: 60vh; /* Further reduced height for smaller screens */
+  }
+
+  .glass-overlay {
+    padding: 10px 15px;
+    max-width: 90%; /* Ensure it fits well on small screens */
+  }
+
+  .glass-overlay h2 {
+    font-size: 1.6rem; /* Compact font size for headings */
+    margin-bottom: 10px;
+  }
+
+  .glass-overlay p {
+    font-size: 0.8rem; /* Smaller paragraph font size */
+    line-height: 1.3; /* Slightly reduced line height */
+  }
+}

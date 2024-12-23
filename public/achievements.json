@@ -1,0 +1,17 @@
+[
+  {
+    "img": "/images/achive.png",
+    "title": "AI-Powered Precision Detection",
+    "details": "Dotsito’s high-end AI models ensure precise detection and counting of object variants in complex settings. These models are tailored for industrial and security applications."
+  },
+  {
+    "img": "/images/suc1.png",
+    "title": "Customized Object Detection",
+    "details": "DotSito's advancements include fire and smoke detection, enabling early warnings and protecting valuable assets. Intruder alerts ensure property safety and quick responses."
+  },
+  {
+    "img": "/images/dashboard.png",
+    "title": "Customized Dashboard",
+    "details": "DotSito's dashboard offers real-time insights, tailored for user needs, allowing easy monitoring, trend analysis, and performance tracking across various industries."
+  }
+]

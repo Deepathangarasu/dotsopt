@@ -1,0 +1,77 @@
+{
+    "object-detection": [
+      {
+        "img": "/images/vehicle.png",
+        "title": "Vehicle Entry/Exit",
+        "description": "Automate vehicle entry/exit within premises.",
+        "details": "A Vehicle Entry/Exit system is a solution designed to monitor, record, and manage the movement of vehicles entering and exiting a specific area. It ensures security and efficiency in parking and restricted areas."
+      },
+      {
+        "img": "/images/people.png",
+        "title": "People Counting",
+        "description": "Crowd analytics to measure the flow of people.",
+        "details": "A People Counting system accurately tracks the number of people entering, exiting, or occupying a space in real-time, aiding in resource management and safety compliance."
+      },
+      {
+        "img": "/images/intusio.png",
+        "title": "Employee Access Control",
+        "description": "Detect and alert intrusions within premises.",
+        "details": "An Employee Access Control system manages and monitors employee access, ensuring only authorized individuals can enter sensitive areas."
+      }
+    ],
+    "security-surveillance": [
+      {
+        "img": "/images/face.png",
+        "title": "Facial Recognition",
+        "description": "Scaled-up security access.",
+        "details": "Facial Recognition uses AI to verify identities based on facial features, providing seamless and secure access to premises."
+      },
+      {
+        "img": "/images/intusio.png",
+        "title": "Intrusion Detection",
+        "description": "Detect and alert intrusions within premises.",
+        "details": "Intrusion Detection monitors and identifies unauthorized access or suspicious activities, sending instant alerts to ensure safety."
+      },
+      {
+        "img": "/images/cam.png",
+        "title": "Real-time Video Surveillance",
+        "description": "Track vehicles entering/exiting premises.",
+        "details": "Real-time Video Surveillance analyzes video feeds to detect incidents, enhancing security and operational efficiency."
+      }
+    ],
+    "Worker monitoring and attendance": [
+      {
+        "img": "/images/safety3.png",
+        "title": "Real-time Safety Monitoring",
+        "description": "Monitor workers' entry and exit times.",
+        "details": "Safety Monitoring tracks workers’ movements in real-time, ensuring compliance with safety protocols and optimizing productivity."
+      },
+      {
+        "img": "/images/emcr.png",
+        "title": "Emergency Response",
+        "description": "Track attendance in real-time.",
+        "details": "Emergency Response systems provide real-time tracking of employees during emergencies, ensuring swift action and accountability."
+      },
+      {
+        "img": "/images/Attnce.jpg",
+        "title": "Automated Attendance Tracking",
+        "description": "Ensure workers comply with safety protocols.",
+        "details": "Attendance Tracking automates the process of recording attendance, minimizing manual errors and improving workforce management."
+      }
+    ],
+    "vehicle-monitoring": [
+      {
+        "img": "/images/lice.png",
+        "title": "License Plate Recognition",
+        "description": "Automate vehicle entry using license plate recognition.",
+        "details": "License Plate Recognition uses OCR technology to detect and read license plates, ensuring secure and efficient vehicle entry."
+      },
+      {
+        "img": "/images/vehiclemonitor.png",
+        "title": "Vehicle Monitoring",
+        "description": "Monitor the speed of vehicles within premises.",
+        "details": "Vehicle Monitoring analyzes vehicle behavior, including speed and location, to enhance safety and operational efficiency."
+      }
+    ]
+  }
+  
