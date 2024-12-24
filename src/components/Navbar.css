@@ -23,7 +23,7 @@
 .nav-links ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 45px;
 }
 
 .nav-links ul li {
@@ -40,16 +40,12 @@
 
 .nav-links ul li a:hover,
 .dropdown-trigger:hover {
-  color: #ff9100;
+  color:#255ae1;
 }
 
-.nav-links ul li a.active {
-  color: #255ae1;
-  font-weight: bold;
-  border-bottom: 2px solid #255ae1;
-}
 
-/* Dropdown Menu */
+
+
 .dropdown-trigger {
   font-size: 16px;
   position: relative;

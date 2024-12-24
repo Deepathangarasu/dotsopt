@@ -76,7 +76,7 @@
 
 .tabs {
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
   margin-bottom: 30px;
 }
@@ -100,6 +100,9 @@
 .tabs button:hover {
   color: #007bff;
 }
+.details{
+  justify-content: center ;
+}
 
 /* Solutions Section Cards */
 .cards-content {
@@ -118,7 +121,7 @@
   border-radius: 10px;
   flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
   max-width: 30%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(231, 228, 228, 0.304);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -137,13 +140,14 @@
 
 .card p {
   font-size: 1rem;
-  color: #666;
+  color: #121212;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(17, 49, 194);
+  /*box-shadow: 0 8px 16px rgba(17, 50, 194, 0.253);*/
 }
 
 /* Achievements Section */
@@ -172,16 +176,16 @@
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+  flex: 1 1 calc(33.333% - 20px); 
   max-width: 30%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.163);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cards-container1 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(17, 49, 194);
+  /*box-shadow: 0 8px 16px rgba(17, 50, 194, 0.253);*/
 }
 
 .cards-container1 .card img {
@@ -198,7 +202,7 @@
 
 .cards-container1 .card p {
   font-size: 1rem;
-  color: #666;
+  color: #070606;
   margin-bottom: 15px;
 }
 
@@ -261,16 +265,15 @@
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  margin: 20px auto;
+  /*padding: 10px;*/
+  margin: 100px auto;
   width: 100%;
   max-width: 1200px;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.519);
   border-radius: 8px;
   gap: 20px; /* Add spacing between items */
 }
-
 .stat-item {
   flex: 1 1 calc(33.333% - 20px); /* 3 items per row with space */
   max-width: calc(33.333% - 20px); /* Prevent items from exceeding row width */
@@ -290,7 +293,7 @@
 .stat-item h3 {
   font-size: 2rem;
   font-weight: bold;
-  color: #007bff;
+  color: #0e0e0e;
   margin: 10px 0;
 }
 

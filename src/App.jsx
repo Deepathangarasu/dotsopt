@@ -28,7 +28,7 @@ const App = () => {
             <Route path="/product" element={<Product />} />
             <Route path="/productdetails/:id" element={<ProductDetails />} /> {/* Dynamic Product Details */}
 
-            {/* Solution-specific Routes */}
+           
             <Route
               path="/solutions/object-detection"
               element={<Solutions solution="object-detection" />}

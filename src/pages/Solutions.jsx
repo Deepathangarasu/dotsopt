@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import './Solutions.css';
 import FooterComponent from "./navbar/FooterComponent";
 import Navbar from "../components/Navbar";
-import AttendanceTrackingImg from "../images/Attnce.jpg";
+import AttendanceTrackingImg from "../images/Attnce.jpg"; // Banner Image
 
 const Solutions = ({ solution }) => {
-  window.scrollTo(0, 0);
-  const [activeTab, setActiveTab] = useState('features'); // State to control active tab
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [activeTab, setActiveTab] = useState('features');
+
   const solutionsData = {
     "object-detection": {
       title: "Object Detection and Classification",
@@ -18,9 +23,7 @@ const Solutions = ({ solution }) => {
         "Supports multiple object types"
       ],
       image: "../images/Attnce.jpg",
-      
-      summary: "Enhance your analytics and monitoring capabilities with our cutting-edge object detection technology. specifically for Vehicle Entry/Exit, People Counting, and Employee Access Control. These descriptions are in paragraph form, with each providing a brief yet comprehensive overview.",
-      
+      summary: "Enhance your analytics and monitoring capabilities with our cutting-edge object detection technology, specifically for Vehicle Entry/Exit, People Counting, and Employee Access Control.",
       useCases: [
         "Retail theft prevention",
         "Traffic monitoring",
@@ -37,7 +40,7 @@ const Solutions = ({ solution }) => {
         "Facial recognition",
         "Cloud-based storage and monitoring"
       ],
-      image:"../images/Attnce.jpg",
+      image: "../images/Attnce.jpg",
       heading: "Comprehensive Security Solutions",
       summary: "Protect your assets and ensure safety with our top-of-the-line security and surveillance systems.",
       useCases: [
@@ -75,7 +78,7 @@ const Solutions = ({ solution }) => {
         "Traffic flow management",
         "Smart parking solutions"
       ],
-      image:"../images/Attnce.jpg",
+      image: "../images/Attnce.jpg",
       heading: "Intelligent Vehicle Monitoring",
       summary: "Achieve enhanced security and efficiency with our vehicle detection and monitoring services.",
       useCases: [
@@ -89,21 +92,26 @@ const Solutions = ({ solution }) => {
 
   const content = solutionsData[solution];
 
+  
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName);
+  };
+
   return (
     <div>
       <Navbar />
-      <div className="main">
-        <div className="product-page">
-          <section></section>
-          <section className="product-banner-page" style={{ backgroundImage: `url(${AttendanceTrackingImg})` }}>
-            <div>
-              <h1 className='our-products'>solutions</h1> <br />
-              
-            </div>
-          </section>
-        </div>
-      </div>
 
+      {/* Banner Section */}
+      <section 
+        className="product-banner-page" 
+        style={{ backgroundImage: `url(${AttendanceTrackingImg})` }}
+      >
+        <div className="overlay">
+          <h1>{content.title}</h1>
+        </div>
+      </section>
+
+      {/* Content Section */}
       <div className="solution-details">
         <h2>{content.title}</h2>
         <h3>{content.heading}</h3>
@@ -114,13 +122,13 @@ const Solutions = ({ solution }) => {
         <div className="tab-navigation">
           <span
             className={`tab ${activeTab === 'features' ? 'active' : ''}`}
-            onClick={() => setActiveTab('features')}
+            onClick={() => handleTabClick('features')}
           >
             Features
           </span>
           <span
             className={`tab ${activeTab === 'useCases' ? 'active' : ''}`}
-            onClick={() => setActiveTab('useCases')}
+            onClick={() => handleTabClick('useCases')}
           >
             Use Cases
           </span>
@@ -130,7 +138,6 @@ const Solutions = ({ solution }) => {
         <section className="tab-content">
           {activeTab === 'features' && (
             <div>
-              <h4>Features</h4>
               {content.features.map((feature, index) => (
                 <p key={index} className="feature-item">{feature}</p>
               ))}
@@ -138,7 +145,6 @@ const Solutions = ({ solution }) => {
           )}
           {activeTab === 'useCases' && (
             <div>
-              <h4>Use Cases</h4>
               {content.useCases.map((useCase, index) => (
                 <p key={index} className="use-case-item">{useCase}</p>
               ))}

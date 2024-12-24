@@ -1,4 +1,4 @@
-/* General Styling for Product Details */
+
 .product-details {
   position: relative;
   padding: 20px;
@@ -8,26 +8,25 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  font-family: "Poppins", sans-serif; /* Global font added */
+  font-family: "Poppins", sans-serif; 
 }
 
-/* Back Button Styling */
+
 .back-button {
   position: absolute;
-  top: 90px; /* Adjust as per the navbar height */
+  top: 90px; 
   left: 20px;
   padding: 12px 20px;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 600;
   color: #fff;
   background-color: #007bff;
   border: none;
-  border-radius: 50px; /* Rounded button for modern look */
+  border-radius: 50px; 
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10; /* Ensure it appears above other content */
-}
+  z-index: 10; }
 
 .back-button:hover {
   background-color: #0056b3;
@@ -53,7 +52,6 @@
   }
 }
 
-/* Product Title */
 .product-title {
   font-size: 3rem;
   color: #1f2937;
@@ -63,7 +61,6 @@
   animation: fadeIn 0.8s ease-in-out;
 }
 
-/* List View for Product Details */
 .product-details-list {
   display: flex;
   flex-direction: column;
@@ -88,7 +85,7 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Section Heading */
+
 .section-heading {
   font-size: 1.8rem;
   color: #007bff;
@@ -98,7 +95,7 @@
   padding-left: 15px;
 }
 
-/* Section Content */
+
 .section-content {
   font-size: 1rem;
   line-height: 1.8;
@@ -119,7 +116,7 @@
   color: #4b5563;
 }
 
-/* Enhancements: Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -142,7 +139,7 @@
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .product-title {
     font-size: 2.5rem;

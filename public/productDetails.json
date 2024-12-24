@@ -54,5 +54,31 @@
         ]
       }
     ]
+  },{
+    "id":3,
+    "title":"Role based dashboard",
+    "details":[
+      {
+        "heading":"Introduction",
+        "content":"Supervisors' attendance systems ensure efficient workforce management by tracking attendance, monitoring activities, and maintaining compliance. These tools provide real-time insights to streamline operations and improve productivity. They enable supervisors to focus on strategic tasks while automating repetitive processes. The system fosters transparency and accountability within the workforce."
+      },
+      {
+        "heading":"Key Features",
+        "content":[
+        "Customizable schedules and shift planning ensure proper resource allocation and optimize productivity across teams.",
+        "Real-time performance monitoring helps supervisors track attendance, task progress, and employee engagement effectively.",
+        "Integrated communication tools enhance collaboration through instant messaging, notifications, and updates.",
+        "Compliance enforcement automates adherence to labor laws and organizational policies, ensuring seamless operations."
+        ]
+      },
+      {
+        "heading":"Benefits",    
+        "content":["Streamlined operations with better allocation of resources and optimized workflows for increased productivity.",
+        "Accurate payroll integration eliminates manual errors by linking attendance data directly to salary processing.",
+        "Improved compliance ensures adherence to labor laws and reduces risks of penalties or legal issues.",
+        "Data-driven decision-making enables supervisors to analyze trends and optimize workforce performance efficiently."
+        ]
+      }
+    ]
   }
 ]

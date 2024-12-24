@@ -104,7 +104,6 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './Solutions.css';
 
-// Centralized data for dynamic content
 const solutionsData = {
   "object-detection": {
     title: "Object Detection and Classification",

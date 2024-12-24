@@ -35,7 +35,7 @@ const AboutPage = () => {
           <br></br>
           <p>Dot Spot envisions a future where businesses thrive with seamless automation, enhanced operational efficiency, and sustainable growth, paving the way for a smarter, more connected world.</p>
         </div>
-        <div className="mission-image">
+        <div className="vision-image">
           <img src={visionImg} alt="aboutImg" />
         </div>
       </section>

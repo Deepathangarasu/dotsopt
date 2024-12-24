@@ -1,26 +1,31 @@
-.product-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
 .product-banner {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-bottom: 20px;
   overflow: hidden;
 }
 
+.product-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
+  z-index: 1; /* Ensures the overlay is above the background but below the content */
+}
+
 .glass-overlay {
-  background: rgba(255, 255, 255, 0.2); /* Glass effect */
-  backdrop-filter: blur(10px); /* Background blur for glass effect */
+  position: relative;
+  z-index: 2; /* Ensures text and buttons are above the overlay */
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
   border-radius: 12px;
   padding: 15px 25px;
   max-width: 600px;
@@ -31,36 +36,37 @@
 }
 
 .glass-overlay h2 {
-  font-size: 2rem; /* Reduced size for better responsiveness */
+  font-size: 2rem; 
   margin-bottom: 15px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color:white;
 }
 
 .glass-overlay p {
-  font-size: 1rem; /* Adjusted font size for better readability */
-  line-height: 1.4; /* Reduced line height for compact layout */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem; 
+  line-height: 1.4; 
   margin-top: 10px;
+  color:white;
 }
 
-/* Fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.read-more-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* Responsive Design */
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
 
-/* Tablet (768px and below) */
 @media (max-width: 768px) {
   .product-banner {
-    height: 70vh; /* Reduced height for tablets */
+    height: 70vh; 
   }
 
   .glass-overlay {
@@ -69,33 +75,32 @@
   }
 
   .glass-overlay h2 {
-    font-size: 1.8rem; /* Reduced font size for headings */
+    font-size: 1.8rem; 
   }
 
   .glass-overlay p {
-    font-size: 0.9rem; /* Reduced paragraph font size */
+    font-size: 0.9rem; 
     line-height: 1.4;
   }
 }
 
-/* Mobile (480px and below) */
 @media (max-width: 480px) {
   .product-banner {
-    height: 60vh; /* Further reduced height for smaller screens */
+    height: 60vh;
   }
 
   .glass-overlay {
     padding: 10px 15px;
-    max-width: 90%; /* Ensure it fits well on small screens */
+    max-width: 90%; 
   }
 
   .glass-overlay h2 {
-    font-size: 1.6rem; /* Compact font size for headings */
+    font-size: 1.6rem; 
     margin-bottom: 10px;
   }
 
   .glass-overlay p {
-    font-size: 0.8rem; /* Smaller paragraph font size */
-    line-height: 1.3; /* Slightly reduced line height */
+    font-size: 0.8rem;
+    line-height: 1.3; 
   }
 }
