@@ -67,6 +67,7 @@
   padding: 50px 20px;
   background-color: #f4f4f4;
   text-align: center;
+
 }
 
 .solution-section h2 {
@@ -95,6 +96,7 @@
   border-bottom: 2px solid #007bff;
   color: #007bff;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .tabs button:hover {
@@ -103,6 +105,7 @@
 .details{
   justify-content: center ;
 }
+
 
 /* Solutions Section Cards */
 .cards-content {
@@ -136,6 +139,7 @@
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .card p {
@@ -143,6 +147,7 @@
   color: #121212;
   margin-bottom: 15px;
   text-align: left;
+  letter-spacing: 0.1px;
 }
 
 .card:hover {
@@ -198,6 +203,8 @@
 .cards-container1 .card h1 {
   font-size: 1.5rem;
   margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .cards-container1 .card p {
@@ -210,7 +217,7 @@
 @media (max-width: 1024px) {
   .card,
   .cards-container1 .card {
-    flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    flex: 1 1 calc(50% - 20px); 
     max-width: 48%;
   }
 }
@@ -223,7 +230,7 @@
 
   .card,
   .cards-container1 .card {
-    flex: 1 1 calc(100% - 20px); /* 1 card per row */
+    flex: 1 1 calc(100% - 20px); 
     max-width: 100%;
   }
 
@@ -262,7 +269,7 @@
 /* Statistics Box Section */
 .statistics-box {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap; 
   justify-content: space-around;
   align-items: center;
   /*padding: 10px;*/
@@ -272,11 +279,11 @@
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.519);
   border-radius: 8px;
-  gap: 20px; /* Add spacing between items */
+  gap: 20px; 
 }
 .stat-item {
-  flex: 1 1 calc(33.333% - 20px); /* 3 items per row with space */
-  max-width: calc(33.333% - 20px); /* Prevent items from exceeding row width */
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px);
   text-align: center;
   padding: 10px;
   background-color: #f9f9f9;
@@ -306,14 +313,14 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .stat-item {
-    flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 768px) {
   .stat-item {
-    flex: 1 1 calc(100% - 20px); /* 1 item per row */
+    flex: 1 1 calc(100% - 20px); 
     max-width: 100%;
   }
 
@@ -335,3 +342,6 @@
     font-size: 0.85rem;
   }
 }
+
+
+

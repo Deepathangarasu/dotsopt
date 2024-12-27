@@ -71,6 +71,12 @@
         "title": "Vehicle Monitoring",
         "description": "Monitor the speed of vehicles within premises.",
         "details": "Vehicle Monitoring analyzes vehicle behavior, including speed and location, to enhance safety and operational efficiency."
+      },
+      {
+        "img":"/images/carspace.png",
+        "title":"Parking Space Detection",
+        "description":"Monitor the speed of vehicles within premises.",
+        "details":"Parking Space Detection uses sensors, cameras, and machine learning algorithms to detect available parking spaces."
       }
     ]
   }

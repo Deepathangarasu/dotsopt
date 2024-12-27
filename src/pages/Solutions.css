@@ -68,7 +68,7 @@ h4 {
 
 /* Solution Details Section */
 .solution-details h2 {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   color: #333;
   font-weight: bold;
   text-align: center;
@@ -83,11 +83,12 @@ h4 {
 }
 
 .solution-details p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #1d1d1d;
   justify-content: center;
   margin: 15px 0;
-  line-height: 1.5;
+  line-height: 1.8;
+  text-align: justify;
 }
 
 /* Tab Navigation */
@@ -105,18 +106,20 @@ h4 {
   color: #333;
   font-weight: 500;
   position: relative;
+  font-size: 1.5rem;
 }
 
 .tab.active {
   color: #0088ff;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .tab.active::after {
   content: "";
   display: block;
   height: 2px;
-  background-color: #0b0b0b;
+  /*background-color: #0b0b0b;*/
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -173,6 +176,27 @@ h4 {
     font-size: 1rem;
   }
 }
+
+.additional-content-section {
+  margin-bottom: 20px;
+}
+
+.additional-content-section h4 {
+  font-size: 1.5rem; 
+  color: #0b0b0b;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: capitalize;  
+}
+
+.additional-content-section p {
+  font-size: 1.2rem;  
+  color: #0a0909;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
 
 @media (max-width: 480px) {
   .solution-details h2 {

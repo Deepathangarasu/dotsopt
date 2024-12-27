@@ -12,6 +12,8 @@ const AboutPage = () => {
       <section className="about-banner" style={{ backgroundImage: `url(${about})` }}>
         <div className="overlay">
           <h1 className='about-us'>About us</h1>
+          <br></br>
+          <p className="about-p">DotSpot — Future-Proof Your Business with Cutting-Edge AI Solutions.</p>
         </div>
       </section>
       <section className="mission-section">

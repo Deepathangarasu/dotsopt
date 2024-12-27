@@ -11,6 +11,7 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState("object-detection");
   const [cardData, setCardData] = useState({});
   const [achievements, setAchievements] = useState([]);
+  const [showBackToTop, setShowBackToTop] = useState(false);  // New state for Back to Top button visibility
   const navigate = useNavigate();
 
   const tabs = [
@@ -22,6 +23,7 @@ const Home = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
     // Fetch card data
     const fetchCardData = async () => {
       try {
@@ -44,9 +46,30 @@ const Home = () => {
       }
     };
 
+    // Detect scroll to show Back to Top button
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
     fetchCardData();
     fetchAchievements();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const handleBackToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   const renderCards = () => {
     return cardData[activeTab]?.map((card, index) => (
@@ -71,13 +94,12 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {/* Background Video Section */}
       <video className="background-video" autoPlay loop muted>
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      {/* Banner Content */}
+      {/* Banner-Content */}
       <div className="content">
         <h1>Transforming Vision with AI for Your Business</h1>
         <p>Dotspot - Transforming Vision with AI Precision</p>
@@ -86,7 +108,7 @@ const Home = () => {
       {/* Spacer */}
       <div className="spacer"></div>
 
-      {/* Statistics Section */}
+      {/* Statistics-Section */}
       <section className="statistics-box">
         <div className="stat-item">
           <h3>200K+</h3>
@@ -102,7 +124,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Solution Section */}
+      {/* Solution-section */}
       <section className="solution-section">
         <h2>Our Solutions</h2>
         <div className="tabs">
@@ -116,17 +138,16 @@ const Home = () => {
             </button>
           ))}
         </div>
-        
+
         <div className="cards-content">{renderCards()}</div>
       </section>
 
-      {/* Achievements Section */}
       <section className="achievements-section">
-        <h2>Our Achievements</h2>
+        <h2>Our Features</h2>
         <div className="cards-container1">{renderAchievements()}</div>
       </section>
 
-      {/* Footer */}
+
       <FooterComponent />
     </div>
   );
